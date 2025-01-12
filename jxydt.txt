@@ -2,6 +2,13 @@ let bodyObj = JSON.parse($response.body);
 let resultObj = bodyObj['result'];
 
 for (let key in resultObj) {
+
+    if (resultObj.status === "5"){
+        resultObj.status = "2";
+        resultObj.endTime = "9999-09-09";
+break;
+    }
+
     if (resultObj[key].status === "5"){
         resultObj[key].status = "2";
         resultObj[key].endTime = "9999-09-09";
