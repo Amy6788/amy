@@ -3,7 +3,7 @@ let resultObj = bodyObj['result'];
 
 for (let key in resultObj) {
     if (resultObj[key].status === "5"){
-        resultObj[key].status = 2;
+        resultObj[key].status = "2";
         resultObj[key].endTime = "9999-09-09";
     }
 }
