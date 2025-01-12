@@ -6,7 +6,7 @@ for (let key in resultObj) {
     if (resultObj.status === "5"){
         resultObj.status = "2";
         resultObj.endTime = "9999-09-09";
-break;
+        break;
     }
 
     if (resultObj[key].status === "5"){
@@ -14,5 +14,7 @@ break;
         resultObj[key].endTime = "9999-09-09";
     }
 }
+
+
 
 $done({body: JSON.stringify(bodyObj)});
